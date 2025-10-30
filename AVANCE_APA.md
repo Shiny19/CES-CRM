@@ -1,72 +1,117 @@
-Avance del documento (Normas APA)
+Implementación Front-End de CES (CRM Experts)
 
-Título: Avance - Implementación front-end de CES (CRM Experts)
+Avance del Proyecto
 
 Autores:
 Juan José Rincón; Alejandro Quitián Moreno; Alejandro Sierra Garzón; Armando Andrés Hernández; Simón Echeverry
 
 Institución: Politécnico Grancolombiano
-Curso: Front End
+Programa: Ingeniería de Software
+Curso: Front-End
 Profesor: John Alirio Olarte Ramos
 Fecha: 30 de septiembre de 2025
 
 Resumen
-Este documento presenta el avance de la propuesta de sitio web para la empresa CES — CRM Experts. Describe las vistas desarrolladas en esta primera versión y la funcionalidad implementada con HTML, CSS y JavaScript.
 
-Vistas desarrolladas y funcionalidad
-1. Página de inicio (index.html)
-   - Objetivo: puerta de entrada al sitio; presentar la propuesta de valor.
-   - Elementos implementados: encabezado con navegación, hero con imagen de dashboard, sección de características, vista previa de planes (tarjetas) y pie de página.
-   - Funcionalidad: navegación entre páginas, botones que redirigen a la página de planes/contacto.
+Este documento presenta el avance del proyecto de desarrollo del sitio web corporativo para la empresa CES — CRM Experts, enfocado en soluciones CRM personalizadas. Se describen las vistas implementadas en la versión inicial, así como las funcionalidades logradas mediante el uso de HTML, CSS y JavaScript. El objetivo principal es construir una interfaz responsive, funcional y orientada a capturar clientes interesados en servicios CRM.
 
-2. Inicio de sesión (login.html)
-   - Objetivo: permitir autenticación de usuarios registrados.
-   - Elementos implementados: formulario con campos de correo y contraseña, botón 'Iniciar con Google' (simulado), enlace para recuperar contraseña.
-   - Funcionalidad: validación mínima en cliente y manejo de envío mediante JavaScript (demo).
+1. Vistas desarrolladas y funcionalidad
+   1.1 Página de inicio (index.html)
 
-3. Planes y Precios (plans.html)
-   - Objetivo: mostrar opciones de servicio y características por plan.
-   - Elementos implementados: tres tarjetas de plan (Crecimiento, Profesional, Empresas) y listado de beneficios incluidos.
-   - Funcionalidad: enlaces para contactar y seleccionar plan; diseño responsivo.
+Objetivo: servir como punto de entrada al sitio y comunicar la propuesta de valor.
 
-4. Nuestra Empresa (about.html)
-   - Objetivo: comunicar misión, equipo y valores.
-   - Elementos implementados: secciones con texto descriptivo y valores institucionales.
-   - Funcionalidad: presentación informativa para generar confianza.
+Componentes implementados: navegación principal, sección hero, características del servicio, vista previa de planes y pie de página.
 
-5. Formulario de Contacto (contact.html)
-   - Objetivo: capturar solicitudes, cotizaciones y mensajes de clientes.
-   - Elementos implementados: formulario con nombre, correo, teléfono, asunto y mensaje; menú desplegable para tipo de consulta.
-   - Funcionalidad: envío simulado en cliente con retroalimentación (alert).
+Funcionalidad: enlaces funcionales hacia las demás páginas y botones de acción.
 
-6. Chatbot de Contacto (componente en contact.html)
-   - Objetivo: ofrecer atención inmediata mediante ventana emergente.
-   - Elementos implementados: ventana de chat desplegable, campo de entrada para preguntas.
-   - Funcionalidad: interacciones de demostración (envío de preguntas y respuestas automáticas simuladas).
+1.2 Página de inicio de sesión (login.html)
 
-Estructura del repositorio
-- / (raíz)
-  - index.html
-  - login.html
-  - plans.html
-  - about.html
-  - contact.html
-  - assets/
-    - css/style.css
-    - js/main.js
-    - images/* (imágenes y logo placeholders)
+Objetivo: permitir el acceso de usuarios registrados.
 
-Estado actual y próximos pasos
-- Estado: Primera versión funcional en el front-end con maquetación responsive y comportamiento mínimo en JavaScript.
-- Próximos pasos:
-  1. Integrar iconografía y recursos gráficos definitivos.
-  2. Mejorar el diseño visual y accesibilidad (contrastes, etiquetas ARIA más completas).
-  3. Conectar formularios con un backend (endpoints reales) o servicios de correo.
-  4. Implementar autenticación real (OAuth para 'Iniciar con Google').
-  5. Preparar documentación final en formato APA (referencias, metodología, pruebas de usabilidad).
+Componentes: formulario con correo y contraseña, botón para inicio con Google (simulado) y enlace para recuperación.
 
-Referencias
-Se incluirán referencias en formato APA relacionadas con frameworks, bibliotecas y recursos gráficos utilizados en la versión final.
+Funcionalidad: validación básica y manejo del formulario mediante JavaScript.
+
+1.3 Página de planes y precios (plans.html)
+
+Objetivo: presentar los planes de servicio ofrecidos.
+
+Componentes: tres tarjetas de planes (Crecimiento, Profesional y Empresas), beneficios y botón de contacto.
+
+Funcionalidad: navegación y diseño responsivo adaptado a dispositivos móviles.
+
+1.4 Página de empresa (about.html)
+
+Objetivo: presentar la identidad, valores y equipo de la compañía.
+
+Componentes: misión, visión, valores corporativos e información del equipo.
+
+Funcionalidad: navegación e información estructurada para fortalecer la confianza del usuario.
+
+1.5 Formulario de contacto (contact.html)
+
+Objetivo: permitir el envío de solicitudes o cotizaciones.
+
+Componentes: formulario con campos obligatorios (nombre, correo, teléfono y mensaje) y selector de tipo de consulta.
+
+Funcionalidad: simulación de envío con retroalimentación visual.
+
+1.6 Componente de chatbot
+
+Objetivo: ofrecer atención al usuario mediante asistente interactivo.
+
+Componentes: ventana emergente y campo de preguntas.
+
+Funcionalidad: respuestas simuladas mediante JavaScript.
+
+2. Estructura del repositorio
+   /
+   ├─ index.html
+   ├─ login.html
+   ├─ plans.html
+   ├─ about.html
+   ├─ contact.html
+   └─ assets/
+   ├─ css/style.css
+   ├─ js/main.js
+   └─ images/
+
+3. Estado actual del proyecto
+
+Sitio web estático funcional
+
+Diseño responsivo aplicado
+
+Formularios con validaciones básicas
+
+Interacciones iniciales con JavaScript
+
+Arquitectura modular de archivos
+
+4. Próximos pasos
+
+Integrar iconografía e ilustraciones finales
+
+Mejorar accesibilidad (contrastes, etiquetas ARIA, semántica)
+
+Conectar formularios con backend y servicio de correo
+
+Implementar autenticación real (incluyendo OAuth)
+
+Documentación final con metodología y pruebas UX
+
+Despliegue en hosting y dominio
+
+5. Referencias (se agregarán en la entrega final)
+
+Documentación oficial HTML, CSS y JavaScript
+
+Recursos de diseño UI y accesibilidad
+
+Guías de buenas prácticas para interfaces web
 
 Anexos
-- Capturas de las páginas generadas y enlaces al repositorio con el código fuente.
+
+Capturas de pantalla de las vistas desarrolladas
+
+Enlace al repositorio: https://github.com/Shiny19/CES-CRM.git
