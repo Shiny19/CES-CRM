@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Contáctanos — CES</title>
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+
+<body>
+<header class="site-header">
+  <div class="container header-inner">
+    <div class="brand">
+      <img src="assets/images/logo%20ces-Picsart-BackgroundRemover.webp" alt="CES Logo" class="logo" />
+      <div class="brand-text">
+        <h1>CES</h1>
+        <p class="slogan">Expertos en soluciones CRM personalizadas</p>
+      </div>
+    </div>
+    <nav class="main-nav">
+      <a href="index.html">Inicio</a>
+      <a href="plans.html">Nuestros Planes</a>
+      <a href="about.html">Nuestra Empresa</a>
+      <a href="contact.html" class="btn btn-outline">Contáctanos</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="hero hero-contact">
+    <div class="hero-inner">
+      <h2>Contáctanos</h2>
+      <p>Completa el formulario y uno de nuestros especialistas te contactará en menos de 24 horas.</p>
+    </div>
+  </section>
+
+  <section class="container contact-form">
+    <h3>Formulario de contacto</h3>
+
+    <form id="contactForm">
+      <div class="form-grid">
+        <div>
+          <label for="name">Nombre*</label>
+          <input id="name" name="name" required />
+        </div>
+
+        <div>
+          <label for="lastname">Apellido*</label>
+          <input id="lastname" name="lastname" required />
+        </div>
+
+        <div>
+          <label for="email">Correo Electrónico*</label>
+          <input id="email" name="email" type="email" required />
+        </div>
+
+        <div>
+          <label for="phone">Teléfono</label>
+          <input id="phone" name="phone" />
+        </div>
+      </div>
+
+      <label for="message">¿Cómo podemos ayudarte?</label>
+      <textarea id="message" name="message" rows="5" required></textarea>
+
+      <button class="btn btn-grey" type="submit">Enviar</button>
+    </form>
+  </section>
+
+  <section class="container faq-section">
+    <h3>Preguntas Frecuentes</h3>
+
+    <div class="faq-item">
+      <button class="faq-question">¿Por qué debo completar el formulario de contacto?</button>
+      <div class="faq-answer">El formulario nos ayuda a entender mejor tus necesidades y asegurarnos de que recibas la información adecuada sobre nuestros servicios. Al conocer más sobre tu empresa y el CRM que utilizas, podemos ofrecerte soluciones personalizadas.</div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question">¿Qué información solicitan en el formulario?</button>
+      <div class="faq-answer">Pedimos datos básicos como tu nombre, correo electrónico, empresa, industria y una breve descripción de lo que buscas. Esta información nos permite asignarte el consultor adecuado y brindarte una respuesta rápida y precisa.</div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question">¿Cuánto tiempo tardan en responder?</button>
+      <div class="faq-answer">Nos esforzamos por responder en un plazo de 24 a 48 horas hábiles. Si tu solicitud es urgente, puedes indicarlo en el formulario para priorizar tu consulta.</div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question">¿Cómo se usa mi información?</button>
+      <div class="faq-answer">Tu información solo se utiliza para responder a tu solicitud y ofrecerte asesoramiento sobre nuestros servicios. No compartimos tus datos con terceros ni te enviaremos correos no solicitados.</div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question">¿Qué pasa después de enviar el formulario?</button>
+      <div class="faq-answer">Uno de nuestros consultores revisará tu solicitud y se pondrá en contacto contigo por correo o teléfono para discutir los próximos pasos y cómo podemos ayudarte.</div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question">¿Ofrecen consulta inicial gratuita?</button>
+      <div class="faq-answer">Sí, ofrecemos una primera consulta gratuita para evaluar tus necesidades y explicarte cómo podemos optimizar tu CRM.</div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <p>© CES - CRM Experts. Todos los derechos reservados.</p>
+  </div>
+</footer>
+
+<script src="assets/js/main.js"></script>
+
+<!-- ✅ SCRIPT FAQ -->
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    document.querySelectorAll('.faq-question').forEach(btn=>{
+      btn.addEventListener('click', ()=>{
+        btn.classList.toggle('active');
+        let panel = btn.nextElementSibling;
+        panel.style.display = panel.style.display === "block" ? "none" : "block";
+      });
+    });
+  });
+</script>
+
+</body>
+</html>
