@@ -3,7 +3,7 @@ Implementación Front-End de CES (CRM Experts)
 Avance del Proyecto
 
 Autores:
-Juan José Rincón; Alejandro Quitián Moreno; Alejandro Sierra Garzón; Armando Andrés Hernández; Simón Echeverry
+Juan José Rincón; Alejandro Sierra Garzón; Armando Andrés Hernández
 
 Institución: Politécnico Grancolombiano
 Programa: Ingeniería de Software
